@@ -1,43 +1,45 @@
 const id = $('#heading');
 console.log(id);
 
-
 const listItems = $('.listItems');
 console.log(listItems);
 
 const element = $('p');
 console.log(element);
 
-$('#heading').click(function() {
-  console.log($(this).text());
-  // $('p').hide();
-})
+    $('#heading').click(function() {
+      let currentHeading = $(this).text();
+      $(this).text(currentHeading + ' has been clicked');
+      // console.log($(this).text());
+      // $('p').hide();
 
-$('.listItems').click(function() {
-  $(this).hide();
-  $('p').show();
-});
+    })
 
-$('#blueBtn').click(function() {
-  $('.blue').toggle();
-})
+    $('.listItems').click(function() {
+      $(this).hide();
+      $('p').show();
+    });
 
-$('#greyBtn').click(function() {
-  $('.grey').toggle();
-})
+    $('#blueBtn').click(function() {
+      $('.blue').toggle();
+    })
 
-$('#greenBtn').click(function() {
-  $('.green').toggle();
-})
+    $('#greyBtn').click(function() {
+      $('.grey').toggle();
+    })
 
-$('#hideBtn').click(function() {
-  $('.blue').hide();
-  $('.grey').hide();
-  $('.green').hide();
-})
+    $('#greenBtn').click(function() {
+      $('.green').toggle();
+    })
 
-$('#showBtn').click(function() {
-  $('.blue').show();
-  $('.grey').show();
-  $('.green').show();
-})
+    $('#hideBtn').click(function() {
+      $('.blue').hide();
+      $('.grey').hide();
+      $('.green').hide();
+    })
+
+    $('#showBtn').click(function() {
+      $('.blue').show();
+      $('.grey').show();
+      $('.green').show();
+    })
