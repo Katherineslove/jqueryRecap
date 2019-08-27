@@ -1,0 +1,10 @@
+.box {
+  height: 100px;
+  width: 100px;
+}
+
+.row{
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-right: 2px;
+}
