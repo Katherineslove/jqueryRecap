@@ -9,6 +9,7 @@ console.log(element);
 
     $('#heading').click(function() {
       let currentHeading = $(this).text();
+      
       $(this).text(currentHeading + ' has been clicked');
       // console.log($(this).text());
       // $('p').hide();
